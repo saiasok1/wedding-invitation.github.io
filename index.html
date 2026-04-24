@@ -66,7 +66,7 @@
             width: 100%;
             max-width: 500px;
             /* Used fallback images so it works with the given instruction */
-            background-image: linear-gradient(var(--bg-overlay), var(--bg-overlay)), url('images/background.jpg'), url('images/IMG_5846.JPG.jpeg');
+            background-image: linear-gradient(var(--bg-overlay), var(--bg-overlay)), url('images/background.jpg'), url('images/background.jpeg');
             background-size: cover;
             background-attachment: fixed;
             background-position: center;
@@ -505,6 +505,44 @@
             opacity: 0;
             transform: translate(-50%, 100px);
         }
+
+        /* Brother Instagram */
+        .brother-insta {
+            margin-top: 35px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .brother-insta .caption {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            font-style: italic;
+            opacity: 0.9;
+            margin-bottom: 10px;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .brother-insta .insta-link {
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-size: 1rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s ease;
+            padding: 8px 18px;
+            border: 1px solid rgba(212, 175, 55, 0.4);
+            border-radius: 25px;
+            background: rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(5px);
+        }
+
+        .brother-insta .insta-link:hover {
+            background: rgba(212, 175, 55, 0.15);
+            transform: translateY(-3px);
+            border-color: rgba(212, 175, 55, 0.8);
+            box-shadow: 0 5px 15px rgba(212, 175, 55, 0.2);
+        }
     </style>
 </head>
 
@@ -625,6 +663,13 @@
             <p class="footer-text">"We request the honor of your presence to celebrate our special day."</p>
             <div class="divider"><i class="fas fa-heart"></i></div>
             <div class="signature">M & V</div>
+
+            <div class="brother-insta">
+                <p class="caption">With Love</p>
+                <a href="https://www.instagram.com/man1kuttanbabu/" target="_blank" class="insta-link">
+                    <i class="fab fa-instagram"></i> @man1kuttanbabu
+                </a>
+            </div>
         </section>
 
         <!-- Floating Save Date -->
